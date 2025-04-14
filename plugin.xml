@@ -21,7 +21,10 @@
         </config-file>
 
         <!-- Ensure Swift is used -->
-        <preference name="UseSwiftLanguageVersion" value="5" />
+		<variable name="USESWIFTLANGUAGEVERSION" value="5" />
+
+        <preference name="UseSwiftLanguageVersion" value="$USESWIFTLANGUAGEVERSION" />
+
         <source-file src="src/ios/IOSOCRVision.swift" />
     </platform>
 
