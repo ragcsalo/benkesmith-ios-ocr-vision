@@ -1,0 +1,30 @@
+{
+  "name": "benkesmith-ios-ocr-vision",
+  "version": "1.0.0",
+  "description": "A Cordova plugin to perform OCR using Apple's native iOS Vision framework.",
+  "cordova": {
+    "id": "com.benkesmith.ios-ocr-vision",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ragcsalo/benkesmith-ios-ocr-vision.git"
+  },
+  "keywords": [
+    "cordova",
+    "ocr",
+    "ios",
+    "vision",
+    "plugin"
+  ],
+  "author": "Benke Smith <benke.smith@gmail.com>",
+  "license": "Apache-2.0",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=9.0.0"
+    }
+  ]
+}

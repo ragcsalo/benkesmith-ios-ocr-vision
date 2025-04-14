@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.benkesmith.ios-ocr-vision" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>iOS OCR Vision Plugin</name>
+    <description>Cordova plugin for OCR using the iOS Vision framework.</description>
+    <license>MIT</license>
+    <keywords>cordova, ios, OCR, Vision</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=9.0.0" />
+    </engines>
+
+    <js-module src="www/iosocrvision.js" name="IOSOCRVision">
+        <clobbers target="benkesmith.plugins.iosocrvision" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="IOSOCRVision">
+                <param name="ios-package" value="IOSOCRVision" />
+            </feature>
+        </config-file>
+
+        <!-- Ensure Swift is used -->
+        <preference name="UseSwiftLanguageVersion" value="5" />
+        <source-file src="src/ios/IOSOCRVision.swift" />
+    </platform>
+
+</plugin>
