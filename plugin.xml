@@ -20,12 +20,9 @@
             </feature>
         </config-file>
 
-        <!-- Ensure Swift is used -->
-		<variable name="USESWIFTLANGUAGEVERSION" value="5" />
-
-        <preference name="UseSwiftLanguageVersion" value="$USESWIFTLANGUAGEVERSION" />
-
-        <source-file src="src/ios/IOSOCRVision.swift" />
+        <!-- Reference the .m implementation files -->
+        <source-file src="src/ios/IOSOCRVision.h" />
+        <source-file src="src/ios/IOSOCRVision.m" />
     </platform>
 
 </plugin>

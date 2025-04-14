@@ -1,5 +1,5 @@
 var exec = require('cordova/exec');
 
-exports.recognizeText = function(base64Image, success, error) {
-    exec(success, error, "IOSOCRVision", "recognizeText", [base64Image]);
+exports.recognizeText = function(base64Image, successCallback, errorCallback) {
+    exec(successCallback, errorCallback, "IOSOCRVision", "recognizeText", [base64Image]);
 };
